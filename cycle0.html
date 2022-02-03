@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+h2{
+font-size : 30px;
+color : green;
+font-weight : bold;
+text-decoration : underline; 
+}
+</style>
+</head>
+<body>
+<center>
+ <h2> Display output p tag</h2>
+<label> enter any string :
+<input type ="text" id="string">
+<button onclick="myfunction()">print</button>
+<p id="y"</p>
+<script>
+function myfunction() {
+  var x = document.getElementById("string").value;
+  document.getElementById("y").innerHTML = x;
+  document.getElementById("string").value="";
+}
+</script>
+
+</center>
+</body>
+</html>
+
