@@ -1,0 +1,43 @@
+</head>
+<body>
+<center>
+
+<h2>Check smallest of three numbers</h2>
+<br>
+<br>
+<label>enter first integer : 
+<input type="text" id="int1" ></label>
+<br><br>
+<label>enter second integer : 
+<input type="text" id="int2" ></label>
+<br><br>
+<label>enter third integer : 
+<input type="text" id="int3" ></label>
+<br><br>
+<button onclick="smallest()">Find</button>
+<p id="x"></p>
+
+<script>
+function smallest() {+10240
+var a = document.getElementById("int1").value;
+var b = document.getElementById("int2").value;
+var c = document.getElementById("int3").value;
+var p = parseFloat(a)
+var q = parseFloat(b)
+var r = parseFloat(c)
+if (p < q && p < r) { 	
+document.getElementById("x").innerHTML = a + " is the smallest";
+}
+else if(q < p && q < r)
+{
+document.getElementById("x").innerHTML = b + " is the smallest";
+}
+else{
+document.getElementById("x").innerHTML = c + " is the smallest";
+}
+}
+</script>
+
+</center>
+</body>
+</html>
